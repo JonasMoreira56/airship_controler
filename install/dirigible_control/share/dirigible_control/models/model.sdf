@@ -1,0 +1,239 @@
+<?xml version='1.0'?>
+<sdf version='1.7'>
+  <world name="car_world">
+        <physics name="1ms" type="ignored">
+            <max_step_size>0.001</max_step_size>
+            <real_time_factor>1.0</real_time_factor>
+        </physics>
+        <plugin
+            filename="libignition-gazebo-physics-system.so"
+            name="ignition::gazebo::systems::Physics">
+        </plugin>
+        <plugin
+            filename="libignition-gazebo-user-commands-system.so"
+            name="ignition::gazebo::systems::UserCommands">
+        </plugin>
+        <plugin
+            filename="libignition-gazebo-scene-broadcaster-system.so"
+            name="ignition::gazebo::systems::SceneBroadcaster">
+        </plugin>
+
+        <light type="directional" name="sun">
+            <cast_shadows>true</cast_shadows>
+            <pose>0 0 10 0 0 0</pose>
+            <diffuse>0.8 0.8 0.8 1</diffuse>
+            <specular>0.2 0.2 0.2 1</specular>
+            <attenuation>
+                <range>1000</range>
+                <constant>0.9</constant>
+                <linear>0.01</linear>
+                <quadratic>0.001</quadratic>
+            </attenuation>
+            <direction>-0.5 0.1 -0.9</direction>
+        </light>
+
+        <model name='landing_mark'>
+            <pose>0 0 0.05 0 -0 0</pose>
+
+            <link name='landing_mark_link'>
+              <enable_wind>0</enable_wind>
+              <kinematic>0</kinematic>
+              <pose>0 0 0 0 0 0</pose>
+
+              <visual name='base_visual'>
+                <pose>0 0 0 0 -0 0</pose>
+                <geometry>
+                  <cylinder>
+                    <radius>0.5</radius>
+                    <length>0.1</length>
+                  </cylinder>
+                </geometry>
+                <material>
+                  <script>
+                    <name>Gazebo/Grey</name>
+                    <uri>file://media/materials/scripts/gazebo.material</uri>
+                  </script>
+                  <shader type='pixel'>
+                    <normal_map>__default__</normal_map>
+                  </shader>
+                  <ambient>1 1 1 1</ambient>
+                  <diffuse>1 1 1 1</diffuse>
+                  <specular>1 1 1 1</specular>
+                  <emissive>0 0 0 1</emissive>
+                </material>
+                <transparency>0</transparency>
+                <cast_shadows>1</cast_shadows>
+              </visual>
+            
+            <!--O plugin nos ajuda a controlar nosso robô-->
+              <plugin
+                filename="libignition-gazebo-diff-drive-system.so"
+                name="ignition::gazebo::systems::DiffDrive">
+                <left_joint>left_wheel_joint</left_joint>
+                <right_joint>right_wheel_joint</right_joint>
+                <wheel_separation>1.2</wheel_separation>
+                <wheel_radius>0.4</wheel_radius>
+                <odom_publish_frequency>1</odom_publish_frequency>
+                <topic>cmd_vel</topic>
+              </plugin>
+              
+              <collision name='base_collision'>
+                <geometry>
+                  <cylinder>
+                    <radius>0.5</radius>
+                    <length>0.1</length>
+                  </cylinder>
+                </geometry>
+                <max_contacts>10</max_contacts>
+                <surface>
+                  <contact>
+                    <ode/>
+                  </contact>
+                  <bounce/>
+                  <friction>
+                    <torsional>
+                      <ode/>
+                    </torsional>
+                    <ode/>
+                  </friction>
+                </surface>
+              </collision>
+              <self_collide>0</self_collide>
+              <inertial>
+                <pose>0 0 0 0 -0 0</pose>
+                <inertia>
+                  <ixx>1</ixx>
+                  <ixy>0</ixy>
+                  <ixz>0</ixz>
+                  <iyy>1</iyy>
+                  <iyz>0</iyz>
+                  <izz>1</izz>
+                </inertia>
+                <mass>1</mass>
+              </inertial>
+
+              <visual name='pole_visual'>
+                <pose>0 0 0.45 0 0 0</pose>
+                <geometry>
+                  <cylinder>
+                    <radius>0.025</radius>
+                    <length>0.7</length>
+                  </cylinder>
+                </geometry>
+                <material>
+                  <script>
+                    <name>Gazebo/Grey</name>
+                    <uri>file://media/materials/scripts/gazebo.material</uri>
+                  </script>
+                  <shader type='pixel'>
+                    <normal_map>__default__</normal_map>
+                  </shader>
+                  <ambient>0 0 0 1</ambient>
+                  <diffuse>0 0 0 1</diffuse>
+                  <specular>0 0 0 1</specular>
+                  <emissive>0 0 0 1</emissive>
+                </material>
+                <transparency>0</transparency>
+                <cast_shadows>1</cast_shadows>
+              </visual>
+              
+              <collision name='pole_collision'>
+                <geometry>
+                  <cylinder>
+                    <radius>0.025</radius>
+                    <length>0.7</length>
+                  </cylinder>
+                </geometry>
+                <max_contacts>10</max_contacts>
+                <surface>
+                  <contact>
+                    <ode/>
+                  </contact>
+                  <bounce/>
+                  <friction>
+                    <torsional>
+                      <ode/>
+                    </torsional>
+                    <ode/>
+                  </friction>
+                </surface>
+              </collision>
+              
+              <self_collide>0</self_collide>
+              <inertial>
+                <pose>0 0 0.45 0 -0 0</pose>
+                <inertia>
+                  <ixx>1</ixx>
+                  <ixy>0</ixy>
+                  <ixz>0</ixz>
+                  <iyy>1</iyy>
+                  <iyz>0</iyz>
+                  <izz>1</izz>
+                </inertia>
+                <mass>1</mass>
+              </inertial>
+
+          
+              <visual name='sphere_visual'>
+                <pose>0 0 0.85 0 -0 0</pose>
+                <geometry>
+                  <sphere>
+                    <radius>0.05</radius>
+                  </sphere>
+                </geometry>
+                <material>
+                  <script>
+                    <name>Gazebo/Grey</name>
+                    <uri>file://media/materials/scripts/gazebo.material</uri>
+                  </script>
+                  <shader type='pixel'>
+                    <normal_map>__default__</normal_map>
+                  </shader>
+                  <ambient>1 0 0 1</ambient>
+                  <diffuse>1 0 0 1</diffuse>
+                  <specular>1 0 0 1</specular>
+                  <emissive>0 0 0 1</emissive>
+                </material>
+                <transparency>0</transparency>
+                <cast_shadows>1</cast_shadows>
+              </visual>
+              
+              <collision name='sphere_collision'>
+                <geometry>
+                  <sphere>
+                    <radius>0.05</radius>
+                  </sphere>
+                </geometry>
+                <max_contacts>10</max_contacts>
+                <surface>
+                  <contact>
+                    <ode/>
+                  </contact>
+                  <bounce/>
+                  <friction>
+                    <torsional>
+                      <ode/>
+                    </torsional>
+                    <ode/>
+                  </friction>
+                </surface>
+              </collision>
+              <self_collide>0</self_collide>
+              <inertial>
+                <pose>0 0 0.85 0 -0 0</pose>
+                <inertia>
+                  <ixx>1</ixx>
+                  <ixy>0</ixy>
+                  <ixz>0</ixz>
+                  <iyy>1</iyy>
+                  <iyz>0</iyz>
+                  <izz>1</izz>
+                </inertia>
+                <mass>1</mass>
+              </inertial>
+          </link>
+          <static>0</static>
+          <allow_auto_disable>1</allow_auto_disable>
+        </model>
+  </world>
+</sdf>
