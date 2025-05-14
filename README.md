@@ -1,4 +1,5 @@
 # Dirigible Control
+![Texto Alternativo](./src/dirigible_control/img/defult_airship.jpg)
 
 Controlador autônomo para um dirigível simulado no Gazebo com ROS 2.
 
