@@ -5,6 +5,7 @@ Controlador autônomo para um dirigível simulado no Gazebo com ROS 2.
 ## Visão Geral
 
 Este pacote ROS 2 permite controlar um dirigível em um ambiente simulado no Gazebo. Inclui modelos de mundo, modelos de dirigível com câmera, marca de pouso e scripts para inicialização automática do ambiente.
+- O controlador está em fase de Desenvolvimento
 
 ## Estrutura do Projeto
 
@@ -35,16 +36,9 @@ Este pacote ROS 2 permite controlar um dirigível em um ambiente simulado no Gaz
 ## Funcionalidades
 
 - Inicialização automática do Gazebo com o mundo customizado.
-- Controle do dirigível via tópico `/cmd_vel`.
+- Controle do dirigível via tópico `/cmd_vel` [Em desenvolvimento].
 - Simulação de câmera embarcada.
 - Marca de pouso para navegação.
-
-## Testes
-
-Os testes de lint podem ser executados com:
-```sh
-colcon test --packages-select dirigible_control
-```
 
 ## Autor
 
