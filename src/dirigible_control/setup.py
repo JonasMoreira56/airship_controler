@@ -22,7 +22,7 @@ setup(
     install_requires=['setuptools'],
     zip_safe=True,
     maintainer='ros2',
-    maintainer_email='ros2@todo.todo',
+    maintainer_email='jonas.barbosa@ufam.edu.br',
     description='TODO: Package description',
     license='TODO: License declaration',
     tests_require=['pytest'],
