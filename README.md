@@ -5,8 +5,7 @@ Controlador autônomo para um dirigível simulado no Gazebo com ROS 2.
 
 ## Visão Geral
 
-Este pacote ROS 2 permite controlar um dirigível em um ambiente simulado no Gazebo. Inclui modelos de mundo, modelos de dirigível com câmera, marca de pouso e scripts para inicialização automática do ambiente.
-- O controlador está em fase de Desenvolvimento
+Este pacote ROS 2 em sua fase inicial de desenvolvimento permite controlar um dirigível em um ambiente simulado no Gazebo. Inclui modelos de mundo, modelos de dirigível com câmera, marca de pouso e scripts para inicialização automática do ambiente.
 
 ## Estrutura do Projeto
 
@@ -14,13 +13,13 @@ Este pacote ROS 2 permite controlar um dirigível em um ambiente simulado no Gaz
   - `dirigible_controller.py`: Nó principal de controle do dirigível.
   - `launch/dirigible.launch.py`: Script de lançamento que inicia o Gazebo com o mundo e o nó de controle.
   - `models/`: Modelos SDF do dirigível e marca de pouso.
-  - `worlds/world_airship.world`: Mundo do Gazebo com os modelos posicionados.
+  - `worlds/empty.world`: Mundo do Gazebo vazio incluindo os modelos posicionados.
   - `test/`: Testes de lint e copyright.
 - `package.xml`, `setup.py`, `setup.cfg`: Arquivos de configuração do pacote.
 
 ## Como Usar
 
-1. **Instale as dependências** do ROS 2 e do Gazebo.
+1. **Instale as dependências** do ROS 2 Humble e do Gazebo Classic.
 2. **Construa o workspace**:
    ```sh
    colcon build
@@ -36,7 +35,7 @@ Este pacote ROS 2 permite controlar um dirigível em um ambiente simulado no Gaz
 
 ## Funcionalidades
 
-- Inicialização automática do Gazebo com o mundo customizado.
+- Inicialização automática de mundo no Gazebo, incluindo os modelos sdf do Dirigivel e sua Base para Pouso.
 - Controle do dirigível via tópico `/cmd_vel` [Em desenvolvimento].
 - Simulação de câmera embarcada.
 - Marca de pouso para navegação.
