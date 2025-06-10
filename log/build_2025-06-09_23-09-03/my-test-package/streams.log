@@ -1,0 +1,15 @@
+[1.099s] Invoking command in '/home/ros2/ros2_gazebo_ws/venv/lib/python3.10/site-packages/pkg_resources/tests/data/my-test-package-source': PYTHONPATH=/home/ros2/ros2_gazebo_ws/build/my-test-package/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ros2/ros2_gazebo_ws/install/my-test-package/lib/python3.10/site-packages:${PYTHONPATH} ROS_DOMAIN_ID=34 /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../../../../../../../build/my-test-package build --build-base /home/ros2/ros2_gazebo_ws/build/my-test-package/build install --record /home/ros2/ros2_gazebo_ws/build/my-test-package/install.log --single-version-externally-managed
+[1.375s] running egg_info
+[1.376s] writing ../../../../../../../../build/my-test-package/my_test_package.egg-info/PKG-INFO
+[1.377s] writing dependency_links to ../../../../../../../../build/my-test-package/my_test_package.egg-info/dependency_links.txt
+[1.377s] writing top-level names to ../../../../../../../../build/my-test-package/my_test_package.egg-info/top_level.txt
+[1.378s] reading manifest file '../../../../../../../../build/my-test-package/my_test_package.egg-info/SOURCES.txt'
+[1.379s] writing manifest file '../../../../../../../../build/my-test-package/my_test_package.egg-info/SOURCES.txt'
+[1.380s] running build
+[1.380s] running install
+[1.380s] running install_egg_info
+[1.383s] removing '/home/ros2/ros2_gazebo_ws/install/my-test-package/lib/python3.10/site-packages/my_test_package-1.0-py3.10.egg-info' (and everything under it)
+[1.384s] Copying ../../../../../../../../build/my-test-package/my_test_package.egg-info to /home/ros2/ros2_gazebo_ws/install/my-test-package/lib/python3.10/site-packages/my_test_package-1.0-py3.10.egg-info
+[1.385s] running install_scripts
+[1.409s] writing list of installed files to '/home/ros2/ros2_gazebo_ws/build/my-test-package/install.log'
+[1.463s] Invoked command in '/home/ros2/ros2_gazebo_ws/venv/lib/python3.10/site-packages/pkg_resources/tests/data/my-test-package-source' returned '0': PYTHONPATH=/home/ros2/ros2_gazebo_ws/build/my-test-package/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ros2/ros2_gazebo_ws/install/my-test-package/lib/python3.10/site-packages:${PYTHONPATH} ROS_DOMAIN_ID=34 /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../../../../../../../build/my-test-package build --build-base /home/ros2/ros2_gazebo_ws/build/my-test-package/build install --record /home/ros2/ros2_gazebo_ws/build/my-test-package/install.log --single-version-externally-managed
