@@ -1,6 +1,6 @@
 <?xml version='1.0'?>
 <sdf version='1.7'>
-  <model name='camera_hull'>
+  <model name='blimp_w_camera'>
     <pose>0 0 1 0 0 0</pose>
     <link name='camera_link'>
       <pose>0 0 0 0 1.57 0</pose>
