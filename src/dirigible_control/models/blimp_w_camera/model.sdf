@@ -32,7 +32,7 @@
         <update_rate>30</update_rate>
         <visualize>1</visualize>
 
-      
+
         <!-- Camera Sensor Plugin -->
         <plugin name="camera_controller" filename="libgazebo_ros_camera.so">
           <alwaysOn>true</alwaysOn>
@@ -40,15 +40,15 @@
           <cameraName>camera</cameraName>
           <imageTopicName>/drone/camera/image</imageTopicName>
         </plugin>
-      
+
       </sensor>
-      
+
       <self_collide>0</self_collide>
       <enable_wind>0</enable_wind>
       <kinematic>0</kinematic>
 
       <gravity>1</gravity>
-      
+
       <visual name='camera_visual'>
         <pose>0 0 0 0 0 0</pose>
         <geometry>
@@ -119,18 +119,19 @@
           </contact>
         </surface>
       </collision>
-     
-        <visual name='hull_visual'>
+
+      <visual name='hull_visual'>
         <pose>-0.71 0 -4.64 0 1.57 0</pose>
         <geometry>
           <mesh>
             <scale>0.00243 0.00241 0.00241</scale>
-            <uri>https://fuel.ignitionrobotics.org/1.0/hkotze/models/airship/1/files/meshes/envelope.stl</uri>
+            <uri>
+              https://fuel.ignitionrobotics.org/1.0/hkotze/models/airship/1/files/meshes/envelope.stl</uri>
           </mesh>
         </geometry>
         <material>
           <shader type='pixel'>
-          <normal_map>__default__</normal_map>
+            <normal_map>__default__</normal_map>
           </shader>
           <script>
             <name>ModelPreview_1::hull_link::hull_visual_MATERIAL_</name>
@@ -143,35 +144,35 @@
         <transparency>0</transparency>
         <cast_shadows>1</cast_shadows>
       </visual>
-  
-     <visual name="fin_1">
-     <pose>-1.1 0 -3.5 0 -0.1 0</pose>
+
+      <visual name="fin_1">
+        <pose>-1.1 0 -3.5 0 -0.1 0</pose>
         <geometry>
           <box>
             <size>0.5 0.01 0.5</size>
           </box>
         </geometry>
       </visual>
-        
-     <visual name="fin_2">
-     <pose>-0.5 -0.35 -3.5 0.157 0 0.5236</pose>
+
+      <visual name="fin_2">
+        <pose>-0.5 -0.35 -3.5 0.157 0 0.5236</pose>
         <geometry>
           <box>
             <size>0.01 0.5 0.5</size>
           </box>
         </geometry>
       </visual>
-             
-     <visual name="fin_3">
-     <pose>-0.5 0.35 -3.5 0.157 0 -0.5236</pose>
+
+      <visual name="fin_3">
+        <pose>-0.5 0.35 -3.5 0.157 0 -0.5236</pose>
         <geometry>
           <box>
             <size>0.01 0.5 0.5</size>
           </box>
         </geometry>
       </visual>
-        
-        
+
+
     </link>
     <static>1</static>
     <allow_auto_disable>1</allow_auto_disable>

@@ -6,7 +6,7 @@
       <link name='landing_mark_link'>
         <enable_wind>0</enable_wind>
         <kinematic>0</kinematic>
-        <pose>0 0 0 0 0 0</pose>
+        <pose>1 0 0 0 0 0</pose>
 
         <visual name='base_visual'>
           <pose>0 0 0 0 -0 0</pose>
