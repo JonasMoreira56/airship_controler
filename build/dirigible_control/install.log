@@ -5,7 +5,9 @@
 /home/ros2/ros2_gazebo_ws/install/dirigible_control/share/ament_index/resource_index/packages/dirigible_control
 /home/ros2/ros2_gazebo_ws/install/dirigible_control/share/dirigible_control/package.xml
 /home/ros2/ros2_gazebo_ws/install/dirigible_control/share/dirigible_control/launch/dirigible.launch.py
-/home/ros2/ros2_gazebo_ws/install/dirigible_control/share/dirigible_control/worlds/world_airship.world
+/home/ros2/ros2_gazebo_ws/install/dirigible_control/share/dirigible_control/worlds/empty.world
+/home/ros2/ros2_gazebo_ws/install/dirigible_control/share/dirigible_control/worlds/dirigible_world.world
+/home/ros2/ros2_gazebo_ws/install/dirigible_control/share/dirigible_control/worlds/basic.world
 /home/ros2/ros2_gazebo_ws/install/dirigible_control/share/dirigible_control/models
 /home/ros2/ros2_gazebo_ws/install/dirigible_control/lib/python3.10/site-packages/dirigible_control-0.0.0-py3.10.egg-info/top_level.txt
 /home/ros2/ros2_gazebo_ws/install/dirigible_control/lib/python3.10/site-packages/dirigible_control-0.0.0-py3.10.egg-info/PKG-INFO

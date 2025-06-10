@@ -15,4 +15,6 @@ resource/dirigible_control
 test/test_copyright.py
 test/test_flake8.py
 test/test_pep257.py
-worlds/world_airship.world
+worlds/basic.world
+worlds/dirigible_world.world
+worlds/empty.world
