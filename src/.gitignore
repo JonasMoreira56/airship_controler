@@ -1,2 +1,4 @@
-/log
-../install/my-test-package/
+*.log
+*.install
+*.build
+*.venv
