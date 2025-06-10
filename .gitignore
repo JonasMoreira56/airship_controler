@@ -29,6 +29,6 @@ __pycache__/
 # Ignora dados de simulação do Gazebo (se salvos no workspace)
 # Pode ser específico para o seu setup
 *.db
-*.log
+.log
 
 venv/
