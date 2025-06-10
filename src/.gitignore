@@ -1,4 +1,32 @@
+# ROS 2 (colcon) e ROS 1 (catkin) build artifacts
+
+# Diretórios de build (intermediários e de saída de build)
+build/
+install/
+log/
+
+# Outros arquivos/diretórios comuns a serem ignorados em projetos ROS
+# Ignora caches de Python
+__pycache__/
+*.pyc
+
+# Ignora arquivos de depuração (core dumps)
+*.core
+
+# Ignora arquivos de backup criados por alguns editores
+*~
+
+# Ignora dependências de vcs (se você usa o pacote 'vcs' para gerenciar fontes)
+.vcs_repos/
+
+# Ignora arquivos de teste de cobertura de código
+.coverage
+
+# Ignora diretórios de metadados do ROS 2 (se presentes)
+.ros/
+.vscode/
+
+# Ignora dados de simulação do Gazebo (se salvos no workspace)
+# Pode ser específico para o seu setup
+*.db
 *.log
-*.install
-*.build
-*.venv
