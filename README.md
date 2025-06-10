@@ -7,6 +7,17 @@ Controlador autônomo para um dirigível simulado no Gazebo com ROS 2.
 
 Este pacote ROS 2 em sua fase inicial de desenvolvimento permite controlar um dirigível em um ambiente simulado no Gazebo. Inclui modelos de mundo, modelos de dirigível com câmera, marca de pouso e scripts para inicialização automática do ambiente.
 
+
+### Referência
+
+Este projeto foi desenvolvido com base no artigo:
+
+> AZINHEIRA, José R. et al. *Visual servo control for the hovering of all outdoor robotic airship. In: Proceedings 2002 IEEE International Conference on Robotics and Automation* (Cat. No. 02CH37292). IEEE, 2002. p. 2787-2792. [Link para o artigo](https://ieeexplore.ieee.org/abstract/document/1013654?casa_token=V1RESjdL1GAAAAAA:TQov1rpwm6VU6awHbmAbO2H-f5PPjaHkgFZte1Lt2ZEtjKoqWWnyUNWwqw-qAjynVQGcn-HJJ2iA)
+
+Abaixo, uma imagem ilustrativa do artigo:
+
+![Dirigível Simulado no Gazebo](./src/dirigible_control/img/dirigible.jpeg)
+
 ## Estrutura do Projeto
 
 - `dirigible_control/`: Código fonte do pacote ROS 2.
