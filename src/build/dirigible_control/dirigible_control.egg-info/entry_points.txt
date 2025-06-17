@@ -1,0 +1,3 @@
+[console_scripts]
+dirigible_controller = dirigible_control.dirigible_controller:main
+
