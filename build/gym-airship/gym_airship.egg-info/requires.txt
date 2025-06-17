@@ -1,0 +1,7 @@
+setuptools
+gymnasium
+numpy
+rclpy
+geometry_msgs
+nav_msgs
+std_srvs

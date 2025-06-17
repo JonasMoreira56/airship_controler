@@ -1,0 +1,42 @@
+[2.139s] Invoking command in '/home/ros2/ros2_gazebo_ws/src/gym-airship': PYTHONPATH=/home/ros2/ros2_gazebo_ws/build/gym-airship/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ros2/ros2_gazebo_ws/install/gym-airship/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/gym-airship build --build-base /home/ros2/ros2_gazebo_ws/build/gym-airship/build install --record /home/ros2/ros2_gazebo_ws/build/gym-airship/install.log --single-version-externally-managed install_data
+[2.626s] running egg_info
+[2.627s] creating ../../build/gym-airship/gym_airship.egg-info
+[2.629s] writing ../../build/gym-airship/gym_airship.egg-info/PKG-INFO
+[2.629s] writing dependency_links to ../../build/gym-airship/gym_airship.egg-info/dependency_links.txt
+[2.630s] writing entry points to ../../build/gym-airship/gym_airship.egg-info/entry_points.txt
+[2.630s] writing requirements to ../../build/gym-airship/gym_airship.egg-info/requires.txt
+[2.630s] writing top-level names to ../../build/gym-airship/gym_airship.egg-info/top_level.txt
+[2.631s] writing manifest file '../../build/gym-airship/gym_airship.egg-info/SOURCES.txt'
+[2.635s] reading manifest file '../../build/gym-airship/gym_airship.egg-info/SOURCES.txt'
+[2.636s] adding license file 'LICENSE'
+[2.637s] writing manifest file '../../build/gym-airship/gym_airship.egg-info/SOURCES.txt'
+[2.638s] running build
+[2.638s] running build_py
+[2.638s] creating /home/ros2/ros2_gazebo_ws/build/gym-airship/build
+[2.639s] creating /home/ros2/ros2_gazebo_ws/build/gym-airship/build/lib
+[2.640s] creating /home/ros2/ros2_gazebo_ws/build/gym-airship/build/lib/gym-airship
+[2.641s] copying gym-airship/__init__.py -> /home/ros2/ros2_gazebo_ws/build/gym-airship/build/lib/gym-airship
+[2.642s] creating /home/ros2/ros2_gazebo_ws/build/gym-airship/build/lib/gym-airship/envs
+[2.643s] copying gym-airship/envs/airship_landing_env.py -> /home/ros2/ros2_gazebo_ws/build/gym-airship/build/lib/gym-airship/envs
+[2.644s] copying gym-airship/envs/__init__.py -> /home/ros2/ros2_gazebo_ws/build/gym-airship/build/lib/gym-airship/envs
+[2.645s] running install
+[2.649s] running install_lib
+[2.650s] creating /home/ros2/ros2_gazebo_ws/install/gym-airship/lib/python3.10/site-packages/gym-airship
+[2.651s] creating /home/ros2/ros2_gazebo_ws/install/gym-airship/lib/python3.10/site-packages/gym-airship/envs
+[2.652s] copying /home/ros2/ros2_gazebo_ws/build/gym-airship/build/lib/gym-airship/envs/airship_landing_env.py -> /home/ros2/ros2_gazebo_ws/install/gym-airship/lib/python3.10/site-packages/gym-airship/envs
+[2.653s] copying /home/ros2/ros2_gazebo_ws/build/gym-airship/build/lib/gym-airship/envs/__init__.py -> /home/ros2/ros2_gazebo_ws/install/gym-airship/lib/python3.10/site-packages/gym-airship/envs
+[2.653s] copying /home/ros2/ros2_gazebo_ws/build/gym-airship/build/lib/gym-airship/__init__.py -> /home/ros2/ros2_gazebo_ws/install/gym-airship/lib/python3.10/site-packages/gym-airship
+[2.653s] byte-compiling /home/ros2/ros2_gazebo_ws/install/gym-airship/lib/python3.10/site-packages/gym-airship/envs/airship_landing_env.py to airship_landing_env.cpython-310.pyc
+[2.657s] byte-compiling /home/ros2/ros2_gazebo_ws/install/gym-airship/lib/python3.10/site-packages/gym-airship/envs/__init__.py to __init__.cpython-310.pyc
+[2.659s] byte-compiling /home/ros2/ros2_gazebo_ws/install/gym-airship/lib/python3.10/site-packages/gym-airship/__init__.py to __init__.cpython-310.pyc
+[2.659s] running install_data
+[2.660s] creating /home/ros2/ros2_gazebo_ws/install/gym-airship/share/ament_index
+[2.661s] creating /home/ros2/ros2_gazebo_ws/install/gym-airship/share/ament_index/resource_index
+[2.662s] creating /home/ros2/ros2_gazebo_ws/install/gym-airship/share/ament_index/resource_index/packages
+[2.663s] copying resource/gym-airship -> /home/ros2/ros2_gazebo_ws/install/gym-airship/share/ament_index/resource_index/packages
+[2.664s] copying package.xml -> /home/ros2/ros2_gazebo_ws/install/gym-airship/share/gym-airship
+[2.664s] running install_egg_info
+[2.669s] Copying ../../build/gym-airship/gym_airship.egg-info to /home/ros2/ros2_gazebo_ws/install/gym-airship/lib/python3.10/site-packages/gym_airship-0.0.1-py3.10.egg-info
+[2.672s] running install_scripts
+[2.727s] writing list of installed files to '/home/ros2/ros2_gazebo_ws/build/gym-airship/install.log'
+[2.778s] Invoked command in '/home/ros2/ros2_gazebo_ws/src/gym-airship' returned '0': PYTHONPATH=/home/ros2/ros2_gazebo_ws/build/gym-airship/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ros2/ros2_gazebo_ws/install/gym-airship/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/gym-airship build --build-base /home/ros2/ros2_gazebo_ws/build/gym-airship/build install --record /home/ros2/ros2_gazebo_ws/build/gym-airship/install.log --single-version-externally-managed install_data

@@ -1,26 +1,25 @@
 <sdf version='1.7'>
   <world name='default'>
-    <physics type="ode">
-      <max_step_size>0.004</max_step_size> <real_time_factor>1.0</real_time_factor>
-      <real_time_update_rate>250</real_time_update_rate> <gravity>0 0 -9.81</gravity>
+    <physics type='ode'>
+      <max_step_size>0.004</max_step_size>
+      <real_time_factor>1</real_time_factor>
+      <real_time_update_rate>250</real_time_update_rate>
+      <gravity>0 0 -9.81</gravity>
     </physics>
-
-    <plugin name="gazebo_ros_state" filename="libgazebo_ros_state.so">
+    <plugin name='gazebo_ros_state' filename='libgazebo_ros_state.so'>
       <ros>
         <namespace>/gazebo</namespace>
       </ros>
       <update_rate>1.0</update_rate>
     </plugin>
-
     <scene>
       <ambient>0.4 0.4 0.4 1</ambient>
       <background>0.7 0.7 0.7 1</background>
-      <shadows>true</shadows>
+      <shadows>1</shadows>
     </scene>
-
     <light name='sun' type='directional'>
       <cast_shadows>1</cast_shadows>
-      <pose>0 0 10 0 0 0</pose>
+      <pose>0 0 10 0 -0 0</pose>
       <diffuse>0.8 0.8 0.8 1</diffuse>
       <specular>0.2 0.2 0.2 1</specular>
       <attenuation>
@@ -36,7 +35,6 @@
         <falloff>0</falloff>
       </spot>
     </light>
-
     <model name='ground_plane'>
       <static>1</static>
       <link name='link'>
@@ -92,13 +90,11 @@
       <real_time_factor>1</real_time_factor>
       <real_time_update_rate>1000</real_time_update_rate>
     </physics>
-
     <scene>
       <ambient>0.4 0.4 0.4 1</ambient>
       <background>0.7 0.7 0.7 1</background>
       <shadows>1</shadows>
     </scene>
-    
     <audio>
       <device>default</device>
     </audio>
@@ -457,15 +453,15 @@
       <allow_auto_disable>1</allow_auto_disable>
     </model>
     <state world_name='default'>
-      <sim_time>757 868000000</sim_time>
-      <real_time>805 707796349</real_time>
-      <wall_time>1746746807 196421908</wall_time>
-      <iterations>757868</iterations>
+      <sim_time>827 161000000</sim_time>
+      <real_time>111 159041803</real_time>
+      <wall_time>1747245883 23107897</wall_time>
+      <iterations>69293</iterations>
       <model name='camera_hull'>
-        <pose>0.395221 0.00014 2.03463 0 -0 0</pose>
+        <pose>0.395221 -1.18897 2.03463 0 -0 0</pose>
         <scale>1 1 1</scale>
         <link name='camera_link'>
-          <pose>0.395221 0.00014 2.03463 0 1.57 0</pose>
+          <pose>0.395221 -1.18897 2.03463 0 1.57 0</pose>
           <velocity>0 0 0 0 -0 0</velocity>
           <acceleration>0 0 0 0 -0 0</acceleration>
           <wrench>0 0 0 0 -0 0</wrench>
@@ -482,12 +478,12 @@
         </link>
       </model>
       <model name='landing_mark'>
-        <pose>0.537521 -1.31427 0.350045 4e-06 -0.002243 -1e-06</pose>
+        <pose>0.53831 -1.31427 0.349991 -1e-06 1.1e-05 0</pose>
         <scale>1 1 1</scale>
         <link name='landing_mark_link'>
-          <pose>0.537521 -1.31427 0.350045 4e-06 -0.002243 -1e-06</pose>
+          <pose>0.53831 -1.31427 0.349991 -1e-06 1.1e-05 0</pose>
           <velocity>0 0 0 0 -0 0</velocity>
-          <acceleration>0 0 -9.8 0 -0 0</acceleration>
+          <acceleration>0 0 -9.8 -0 -0 -0</acceleration>
           <wrench>0 0 -9.8 0 -0 0</wrench>
         </link>
       </model>
@@ -497,7 +493,7 @@
     </state>
     <gui fullscreen='0'>
       <camera name='user_camera'>
-        <pose>5.17918 -13.2814 10.11 0 0.582756 1.86158</pose>
+        <pose>4.84235 -10.5741 3.76378 0 0.178756 1.92558</pose>
         <view_controller>orbit</view_controller>
         <projection_type>perspective</projection_type>
       </camera>

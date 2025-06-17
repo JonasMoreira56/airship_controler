@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: gym-airship
+Version: 0.0.1
+Summary: Um ambiente Gym para controle de pouso de dirigível no Gazebo.n
+Home-page: UNKNOWN
+Maintainer: ros2
+Maintainer-email: jonasmoreira076@gmail.com
+License: Apache-2.0
+Platform: UNKNOWN
+License-File: LICENSE
+
+UNKNOWN
+

@@ -1,0 +1,25 @@
+[1.742s] Invoking command in '/home/ros2/ros2_gazebo_ws/src/dirigible_control': PYTHONPATH=/home/ros2/ros2_gazebo_ws/build/dirigible_control/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ros2/ros2_gazebo_ws/install/dirigible_control/lib/python3.10/site-packages:${PYTHONPATH} ROS_DOMAIN_ID=56 /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/dirigible_control build --build-base /home/ros2/ros2_gazebo_ws/build/dirigible_control/build install --record /home/ros2/ros2_gazebo_ws/build/dirigible_control/install.log --single-version-externally-managed install_data
+[2.308s] running egg_info
+[2.309s] writing ../../build/dirigible_control/dirigible_control.egg-info/PKG-INFO
+[2.310s] writing dependency_links to ../../build/dirigible_control/dirigible_control.egg-info/dependency_links.txt
+[2.310s] writing entry points to ../../build/dirigible_control/dirigible_control.egg-info/entry_points.txt
+[2.310s] writing requirements to ../../build/dirigible_control/dirigible_control.egg-info/requires.txt
+[2.310s] writing top-level names to ../../build/dirigible_control/dirigible_control.egg-info/top_level.txt
+[2.313s] reading manifest file '../../build/dirigible_control/dirigible_control.egg-info/SOURCES.txt'
+[2.314s] writing manifest file '../../build/dirigible_control/dirigible_control.egg-info/SOURCES.txt'
+[2.314s] running build
+[2.315s] running build_py
+[2.315s] copying dirigible_control/train_dqn.py -> /home/ros2/ros2_gazebo_ws/build/dirigible_control/build/lib/dirigible_control
+[2.315s] running install
+[2.316s] running install_lib
+[2.318s] copying /home/ros2/ros2_gazebo_ws/build/dirigible_control/build/lib/dirigible_control/train_dqn.py -> /home/ros2/ros2_gazebo_ws/install/dirigible_control/lib/python3.10/site-packages/dirigible_control
+[2.319s] byte-compiling /home/ros2/ros2_gazebo_ws/install/dirigible_control/lib/python3.10/site-packages/dirigible_control/train_dqn.py to train_dqn.cpython-310.pyc
+[2.320s] running install_data
+[2.320s] running install_egg_info
+[2.323s] removing '/home/ros2/ros2_gazebo_ws/install/dirigible_control/lib/python3.10/site-packages/dirigible_control-0.0.0-py3.10.egg-info' (and everything under it)
+[2.324s] Copying ../../build/dirigible_control/dirigible_control.egg-info to /home/ros2/ros2_gazebo_ws/install/dirigible_control/lib/python3.10/site-packages/dirigible_control-0.0.0-py3.10.egg-info
+[2.326s] running install_scripts
+[2.382s] Installing dirigible_controller script to /home/ros2/ros2_gazebo_ws/install/dirigible_control/lib/dirigible_control
+[2.384s] Installing train_dqn script to /home/ros2/ros2_gazebo_ws/install/dirigible_control/lib/dirigible_control
+[2.386s] writing list of installed files to '/home/ros2/ros2_gazebo_ws/build/dirigible_control/install.log'
+[2.448s] Invoked command in '/home/ros2/ros2_gazebo_ws/src/dirigible_control' returned '0': PYTHONPATH=/home/ros2/ros2_gazebo_ws/build/dirigible_control/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ros2/ros2_gazebo_ws/install/dirigible_control/lib/python3.10/site-packages:${PYTHONPATH} ROS_DOMAIN_ID=56 /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/dirigible_control build --build-base /home/ros2/ros2_gazebo_ws/build/dirigible_control/build install --record /home/ros2/ros2_gazebo_ws/build/dirigible_control/install.log --single-version-externally-managed install_data

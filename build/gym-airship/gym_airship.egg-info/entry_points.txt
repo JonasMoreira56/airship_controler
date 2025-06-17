@@ -1,0 +1,3 @@
+[console_scripts]
+airship_landing_env = gym_airship.envs.airship_landing_env:AirshipLandingEnv
+

@@ -1,0 +1,6 @@
+gymnasium
+numpy
+rclpy
+# Se você usar bibliotecas como stable-baselines3 para DQN:
+stable-baselines3
+# etc.

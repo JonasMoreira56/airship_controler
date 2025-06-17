@@ -6,7 +6,7 @@ package_name = 'dirigible_control'
 
 setup(
     name=package_name,
-    version='0.0.0',
+    version='0.0.1',
     packages=find_packages(exclude=['test']),
     data_files=[
         ('share/ament_index/resource_index/packages',
@@ -29,6 +29,7 @@ setup(
     entry_points={
         'console_scripts': [
             "dirigible_controller = dirigible_control.dirigible_controller:main",
+            "train_dqn = dirigible_control.train_dqn:main",
         ],
     },
 )
